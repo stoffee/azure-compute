@@ -49,7 +49,7 @@ resource "azurerm_linux_virtual_machine" "main" {
 
   admin_ssh_key {
     username = "adminuser"
-    public_key = file("fake_id_rsa.pub")
+    public_key = file("fake_id_rsa.ssh")
   }
 
   source_image_reference {
